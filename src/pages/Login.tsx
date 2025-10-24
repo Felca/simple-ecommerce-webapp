@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -7,13 +7,14 @@ export default function Login() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
+    const navigate = useNavigate();
 
     const user = { email, password };
 
     localStorage.setItem("users", JSON.stringify(user));
 
     alert("Log in successfull!");
-    window.location.href = "/dashboard";
+    navigate("/dashboard");
   };
 
   return (

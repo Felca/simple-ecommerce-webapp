@@ -1,6 +1,5 @@
 import { useState } from "react";
 import type { Product } from "../components/ProductCard";
-import { redirect } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 export default function AddProduct() {
@@ -36,8 +35,6 @@ export default function AddProduct() {
     setDescription("");
     setCategory("");
     setImage("");
-
-    redirect("/dashboard");
   };
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
