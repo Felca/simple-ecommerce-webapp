@@ -1,6 +1,6 @@
 # Simple E-Commerce Web Application
 
-This is a simple **static e-commerce** web application built using **React.js**, **TypeScript**, and **Vite**.
+This is a simple **static e-commerce** web application built using **React.js**, **TypeScript**, and **Vite**. Data is stored in local storage.
 
 Pages include :
 - **Login**
